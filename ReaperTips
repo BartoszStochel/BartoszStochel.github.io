@@ -1,8 +1,0 @@
-Here are some basic tips and tricks about using Reaper. (tested on Reaper 6.52)
-
-1. You can remove selection with ESC key.
-2. Pressing DELETE will delete the whole selected track.
-3. If you want to delete selected area of the track, press CTRL + DELETE.
-4. You can enable ripple editing (top left corner, second row, third column) to make track from the right move to the left.
-5. To change BPM of the project without affecting imported audio files, open Project Settings (ALT + ENTER, or in File menu in top bar) and change "Timebase for items/envelopes/markers" to Time. You can leave the second setting "Timebase for tempo/time signature envelope" as it is (Beats is default).
-6. To move track freely, without snapping to BPM grid, press SHIFT.
