@@ -8,7 +8,11 @@
 		<ol>
 			<li>If you want to edit Input Action Asset, double click on it in the Project window. Editing in Project Settings window is lacking the Save option!</li>
 			<li>Remember that you can have multiple Input Action Assets in the project.</li>
+			<li>Use [SerializeField] private InputActionReference _nameOfYourAction; in your script. You will be able to drag and drop an action from Project window to your Inspector. Alternatively, you can press circle near your field in the inspector to see all available actions.</li>
+			<li>You can read value of your Value - Vector2 action with _nameOfYourAction.action.ReadValue<Vector2>(); in Update method.</li>
+			<li>You can read value of your Button action with _nameOfYourAction.action.WasPressedThisFrame(); in Update method. IsPressed() and WasReleasedThisFrame() can also be useful.</li>
 		</ol>
+		<p>Research started on March 19, 2026</p>
 		<p>Created on Jun 26, 2026</p>
 		<a href="index.html">Back to main page</a>
 	</body>
