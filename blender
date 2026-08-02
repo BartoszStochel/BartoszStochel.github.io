@@ -1,0 +1,37 @@
+<html>
+	<h1>
+		Blender
+	</h1>
+	<body>
+		<h2>Some basic informations, tips and tricks about Blender (tested on Blender 5.2.0 LTS)</h2>
+    
+    <p>How to create a human character using Skin modifier:</p>
+		<ol>
+			<li>Add a plane, select every vertex and press M to merge</li>
+			<li>Add Mirror modifier (optional - merge distance to 0.1) (optional - enable clipping, but remember that it will be a problem with only one vertex in the middle)</li>
+			<li>Add Skin modifier (optional - enable smooth shading)</li>
+			<li>Add Subdivision Surface modifier (optional - viewport level to 2)</li>
+			<li>Remember about x-ray mode (alt+z)</li>
+			<li>Extrude to create! Start with hips, legs, feet, torso, shoulders, arms, neck, head.</li>
+      <li>Remember to create a character in a T-pose. Character thumbs should go forward, not upwards</li>
+			<li>Ctrl+A - scaling (separate axes also work - flatten ends of the feet for example)</li>
+			<li>Root node needs to be on center! Hips for example. Select Pelvis vert and in modifier window click Mark Root.</li>
+			<li>Remember that you can select two vertices and right click -> subdivide</li>
+			<li>Remember that you can select vertex, ctrl+shift+b = divide one vert into two and move them apart. Bevel?</li>
+			<li>Remember that you can use Ctrl+R to do loop cuts.</li>
+		</ol>
+    
+    <p>How correctly export a model from Blender to Unity:</p>
+		<ol>
+			<li>Remember to apply rotation and scale of the model. Set model pivot to world origin (zero point).</li>
+			<li>In Blender export window set Apply Scalings to FBX All</li>
+      <li>Set Forward to -Y Forward</li>
+      <li>Set Up to Z Up</li>
+      <li>In Unity asset import window set Bake Axis Conversion to true and then apply.</li>
+		</ol>
+    
+		<p>Research started on January 30, 2026</p>
+		<p>Created on August 2, 2026</p>
+		<a href="index.html">Back to main page</a>
+	</body>
+</html>
