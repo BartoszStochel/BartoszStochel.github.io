@@ -4,13 +4,19 @@
 	</h1>
 	<body>
 		<h2>Learn to setup and use Unity's new Input System (tested on Unity 6000.4.6f1)</h2>
-    <p>First, run Unity.</p>
+    	<p>First, run Unity.</p>
 		<ol>
 			<li>If you want to edit Input Action Asset, double click on it in the Project window. Editing in Project Settings window is lacking the Save option!</li>
 			<li>Remember that you can have multiple Input Action Assets in the project.</li>
 			<li>Use [SerializeField] private InputActionReference _nameOfYourAction; in your script. You will be able to drag and drop an action from Project window to your Inspector. Alternatively, you can press circle near your field in the inspector to see all available actions.</li>
 			<li>You can read value of your Value - Vector2 action with _nameOfYourAction.action.ReadValue&lt;Vector2&gt;(); in Update method.</li>
 			<li>You can read value of your Button action with _nameOfYourAction.action.WasPressedThisFrame(); in Update method. IsPressed() and WasReleasedThisFrame() can also be useful.</li>
+		</ol>
+		<p>General advice:</p>
+		<ol>
+			<li>If you want to use an input value inside FixedUpdate method, first you need to cache it in Update method.</li>
+			<li>Remember that in most cases you need to multiply input value by Time.deltaTime or Time.fixedDeltaTime if you want to use it properly.</li>
+			<li>BUT there is one exception - mouse position delta. It accumulates every pointer position change that happened during the frame, so you can not use Time.deltaTime or Time.fixedDeltaTime when reading mouse position delta.</li>
 		</ol>
 		<p>Research started on March 19, 2026</p>
 		<p>Created on Jun 26, 2026</p>
